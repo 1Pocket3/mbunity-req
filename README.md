@@ -58,4 +58,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Preview
 
-![Cloud Landing Page](public/preview.png)
+![Let's Start](public/preview.png)
+![Contact Us page](public/contact.png)
