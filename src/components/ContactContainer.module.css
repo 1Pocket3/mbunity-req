@@ -1,0 +1,22 @@
+.letterSend1Icon {
+  position: sticky;
+  top: 780px;
+  left: 919.87px;
+  width: 264.78px;
+  height: 145px;
+  margin-top: 104px;
+  padding-right: 25px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.frameInner,
+.frameItem {
+  position: absolute;
+  top: 464px;
+  left: 311px;
+  border-radius: 50%;
+  background-color: var(--color-gray-400);
+  width: 269px;
+  height: 269px;
+}
