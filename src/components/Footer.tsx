@@ -82,7 +82,7 @@ export default function Footer({ className }: any): JSX.Element {
         <div className="border-b-2 border-white mt-[130px] font-bold mb-4 text-center text-4xl py-20 mx-20">
           Logo Here
         </div>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 border-b-2 border-gray-600 py-8">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 border-b-2 border-gray-600 py-8">
           {mappedData}
           {FooterEmail()}
         </div>

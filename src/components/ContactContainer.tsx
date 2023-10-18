@@ -11,7 +11,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 const ContactUsContainer = ({ className }: any) => {
   return (
     <div className={className}>
-      <div className="mx-auto max-w-screen-xl flex flex-col md:flex-row md:h-auto mb-[50px] shadow-2xl">
+      <div className="mx-1 sm:mx-1 md:mx-2 max-w-screen-xl flex flex-col md:flex-row md:h-auto mb-[50px] shadow-2xl">
         <div className="md:w-[40%] h-auto bg-white md:rounded-l-lg md:mb-0 mb-4 md:mr-4">
           <div className="w-[full] h-[507px] sm:h-[647px]  bg-black rounded-l-lg p-8 flex flex-col text-white">
             <h1 className="text-white font-bold text-2xl mb-6 text-center sm:text-justify">Contact Information</h1>
