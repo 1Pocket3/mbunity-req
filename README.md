@@ -1,3 +1,9 @@
+## Preview
+
+![Let's Start](public/preview.png)
+![Contact Us page](public/contact.png)
+
+
 # Cloud Landing Page
 
 A landing page template built with Typescript, React, and Tailwind CSS.
@@ -56,7 +62,4 @@ Contributions are welcome! If you'd like to contribute to this project, feel fre
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Preview
-
-![Let's Start](public/preview.png)
-![Contact Us page](public/contact.png)
+# Made by Kormachenko V.
