@@ -16,24 +16,23 @@ function Navbar({ className }: any) {
       <div className='flex justify-between items-center h-14 lg:h-24 sm:h-[3rem] max-w-[1440px] mx-auto px-4 text-black'>
         <h1 className='w-full font-bold md:text-2xl sm:text-lg'>Logo Here</h1>
         <ul className='hidden md:flex'>
-          <li className='p-4 cursor-pointer'>Home</li>
-          <li className='p-4 cursor-pointer'>Features</li>
-          <li className='p-4 cursor-pointer'>Blog</li>
-          <li className='p-4 cursor-pointer'>Shop</li>
-          <li className='p-4 cursor-pointer'>About</li>
-          <li className='p-4 font-bold cursor-pointer'>Contact</li>
+          <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>Home</li>
+          <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>Features</li>
+          <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>Blog</li>
+          <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>Shop</li>
+          <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>About</li>
+          <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>Contact</li>
         </ul>
 
         {/* Корзина и пользовательский иконки */}
-        <div className=' space-x-4 items-center hidden md:flex'>
-          <div className='rounded-full border border-black p-1 flex items-center justify-center cursor-pointer'>
+        <div className='hidden md:flex space-x-4 items-center'>
+          <div className='rounded-full border border-black p-1 flex items-center justify-center cursor-pointer transition hover:bg-black hover:text-white'>
             <AiOutlineUser size={18} />
           </div>
-          <div className='rounded-full border border-black p-1 flex items-center justify-center cursor-pointer'>
+          <div className='rounded-full border border-black p-1 flex items-center justify-center cursor-pointer transition hover:bg-black hover:text-white'>
             <BsCart3 size={18} />
           </div>
         </div>
-
 
         <div onClick={handleNav} className='block md:hidden'>
           {!nav ? <AiOutlineClose size={21} /> : <HiMenuAlt3 size={21} />}
