@@ -42,7 +42,7 @@ function Navbar({ className }: any) {
 
 
   return (
-    <div id='navbar' className={`${className} top-0 w-full transition duration-500`} >
+    <div id='navbar' className={`${className} fixed top-0 w-full transition duration-500`} >
       <div className='flex justify-between items-center h-14 lg:h-24 sm:h-[3rem] max-w-[1440px] mx-auto px-4 text-black'>
         <h1 className='w-full font-bold md:text-2xl sm:text-lg'>Logo Here</h1>
         <ul className='hidden md:flex'>
