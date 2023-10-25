@@ -3,6 +3,7 @@ import BasicTextFields from "./TextField/TextField";
 import LetterImg from '../assets/letter-send-1.png';
 import styles from './ContactContainer.module.css';
 import { BiSolidPhoneCall } from 'react-icons/bi';
+import ContactUs from "./ContactUs";
 import { FaTwitter, FaInstagram, FaDiscord } from 'react-icons/fa';
 import { IoMailSharp } from 'react-icons/io5';
 import { FaLocationDot } from 'react-icons/fa6';
@@ -11,6 +12,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 const ContactUsContainer = ({ className }: any) => {
   return (
     <div className={className}>
+      <ContactUs />
       <div className="mx-1 sm:mx-1 md:mx-auto max-w-screen-xl flex flex-col md:flex-row md:h-auto mb-[50px] shadow-2xl">
         <div className="md:w-[40%] h-auto bg-white md:rounded-l-lg md:mb-0 mb-4 md:mr-4">
           <div className="w-[full] h-[507px] sm:h-[647px]  bg-black rounded-l-lg p-8 flex flex-col text-white">

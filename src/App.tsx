@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { WelcomeScreen } from "./components/WelcomeScreen";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import ContactUs from "./components/ContactUs";
 import ContactUsContainer from "./components/ContactContainer";
-
+import { Route } from "react-router-dom";
+import { Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 export default function App() {
   const [showWelcomeScreen, setShowWelcomeScreen] = useState(true);
@@ -29,8 +30,10 @@ export default function App() {
       {showContent && (
         <>
           <Navbar className="fade-in" />
-          <ContactUs className="fade-in" />
-          <ContactUsContainer className="fade-in" />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<ContactUsContainer />} />
+          </Routes>
           <div className="w-full bg-black text-white px-2 relative">
             <Footer className="fade-in" />
           </div>

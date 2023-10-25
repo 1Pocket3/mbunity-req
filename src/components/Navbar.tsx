@@ -1,27 +1,57 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { BsCart3 } from 'react-icons/bs';
 import { AiOutlineUser } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar({ className }: any) {
 
   const [nav, setNav] = useState(true);
 
+  const history = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+        if (offset > 100) {
+          navbar.classList.add('fixed', 'bg-white', 'shadow-md');
+        } else {
+          navbar.classList.remove('fixed', 'bg-white', 'shadow-md');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const path = window.location.pathname;
+
+  console.log('path', window)
+
+
   return (
-    <div className={className}>
+    <div id='navbar' className={`${className} top-0 w-full transition duration-500`} >
       <div className='flex justify-between items-center h-14 lg:h-24 sm:h-[3rem] max-w-[1440px] mx-auto px-4 text-black'>
         <h1 className='w-full font-bold md:text-2xl sm:text-lg'>Logo Here</h1>
         <ul className='hidden md:flex'>
-          <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>Home</li>
+          <li className={`p-4 cursor-pointer transition hover:font-bold ${path === '/' ? 'font-bold' : 'font-normal'}`} onClick={() => history('/')}>Home</li>
           <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>Features</li>
           <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>Blog</li>
           <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>Shop</li>
           <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>About</li>
-          <li className='p-4 cursor-pointer transition font-normal hover:font-bold'>Contact</li>
+          <li className={`p-4 cursor-pointer transition hover:font-bold ${path === '/contact' ? 'font-bold' : 'font-normal'}`} onClick={() => history('/contact')}>Contact</li>
         </ul>
 
         {/* Корзина и пользовательский иконки */}
