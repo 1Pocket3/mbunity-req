@@ -26,8 +26,8 @@ This project is a landing page template built with Typescript, React, and Tailwi
 
 To get started with this project, you'll need to follow these steps:
 
-1. Clone the repository: `git clone https://github.com/milliorn/cloud-landing-page.git`
-2. Navigate to the project directory: `cd cloud-landing-page`
+1. Clone the repository: `git clone https://github.com/1Pocket3/mbunity-req.git`
+2. Navigate to the project directory: `cd mbunity-req`
 3. Install the dependencies: `npm install`
 
 ## Usage
